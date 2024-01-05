@@ -1,0 +1,28 @@
+{
+  "name": "spring-clone-by-node",
+  "version": "1.0.0",
+  "description": "Spring 프레임워크의 구조를 Node.js 환경에서 러프하게 구현",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lee-clipse/spring-clone-by-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lee-clipse/spring-clone-by-node/issues"
+  },
+  "homepage": "https://github.com/Lee-clipse/spring-clone-by-node#readme",
+  "dependencies": {
+    "@types/node": "^20.10.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
