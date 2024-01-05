@@ -1,7 +1,22 @@
-export class Client {
-  constructor() {}
+import { MockRequest } from "../types";
 
-  makeRequest() {
-    return "This is Request";
+export class Client {
+  private request: MockRequest;
+
+  constructor() {
+    this.request = {
+      method: "GET",
+      url: "/some-site/post/2024",
+      header: {
+        Host: "www.website.com",
+      },
+      cookie: {
+        logged_in: "no",
+      },
+    };
+  }
+
+  getRequest(): MockRequest {
+    return this.request;
   }
 }
