@@ -3,6 +3,7 @@ import { ServletContainer } from "./servletContainer";
 
 export class SpringServer {
   private servletContainer: ServletContainer;
+
   constructor() {
     this.servletContainer = new ServletContainer();
   }
