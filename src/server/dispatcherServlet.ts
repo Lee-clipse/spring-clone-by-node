@@ -14,7 +14,7 @@ export class DispatcherServlet {
     // 사용자 요청에 적절한 Controller 탐색
     const targetController: Controller = this.handlerMapping.routeController(url);
     // Controller - Service - Repository 구조 호출
-    targetController.processLogic(request);
+    targetController.processLogic(request); // TODO: Controller 단에서 View name, Model 반환
     return;
   }
 }
