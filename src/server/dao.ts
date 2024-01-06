@@ -7,10 +7,11 @@ export class DAO {
     this.db = new DB();
   }
 
-  processLogic(params: object) {
+  // 쿼리 가공 후 DB에 전송
+  processLogic(params: object): string[] {
     const query: string = this.buildQuery(params);
-    console.log(query);
-    return;
+    const response: string[] = this.db.runQuery(query);
+    return response;
   }
 
   buildQuery(params: object): string {
