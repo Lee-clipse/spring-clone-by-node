@@ -6,9 +6,9 @@ export class Client {
   constructor() {
     this.request = {
       method: "GET",
-      url: "/some-site/post/2024",
+      url: "/steamawards/goty/2023",
       header: {
-        Host: "www.website.com",
+        Host: "https://store.steampowered.com",
       },
       cookie: {
         logged_in: "no",
