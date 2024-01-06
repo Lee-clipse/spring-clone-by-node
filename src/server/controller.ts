@@ -19,7 +19,7 @@ export class Controller {
   }
 
   parseParams(url: string): string[] {
-    const params: string[] = url.split("/").slice(3);
+    const params: string[] = url.split("/").slice(2);
     return params;
   }
 }
