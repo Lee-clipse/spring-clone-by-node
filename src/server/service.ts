@@ -1,9 +1,22 @@
+import { DAO } from "./dao";
+
 export class Service {
-  constructor() {}
+  private dao: DAO;
+
+  constructor() {
+    this.dao = new DAO();
+  }
 
   processLogic(dto: string[]) {
-    console.log(dto);
+    // 간단한 연도 stoi 로직
+    const dbParams = { year: this.parseToNumber(dto[0]) };
+    const responseDto = this.dao.processLogic(dbParams);
     // Repository 구조 호출
-    return {};
+    return;
+  }
+
+  parseToNumber(str: string): number {
+    const num: number = +str;
+    return num;
   }
 }
